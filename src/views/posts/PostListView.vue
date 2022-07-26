@@ -8,7 +8,7 @@
 					:title="post.title"
 					:content="post.content"
 					:created-at="post.createdAt"
-					@click="goPage(post.id)"
+					@click="goDetailPage(post.id)"
 				></PostItem>
 			</div>
 		</div>
@@ -28,7 +28,7 @@ const fetchPosts = () => {
 	posts.value = getPosts();
 };
 
-const goPage = id => {
+const goDetailPage = id => {
 	router.push({
 		name: 'PostDetail',
 		params: {
