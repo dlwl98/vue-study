@@ -42,6 +42,7 @@ const routes = [
 		path: '/posts/:id/edit',
 		name: 'PostEdit',
 		component: PostEditView,
+		props: true,
 	},
 	{
 		path: '/:pathMatch(.*)*',
